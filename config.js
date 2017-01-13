@@ -1,8 +1,8 @@
 exports.port = process.env.hostname || localhost;
 exports.port = process.env.PORT || 7000;
 exports.mongodb = {
-	uri: 'mongodb://127.0.0.1:27017/wachezaji'
-	//uri: 'mongodb://kariuki:androidapps@ds033126.mlab.com:33126/smsappdb'
+	//uri: 'mongodb://127.0.0.1:27017/wachezaji'
+	uri: 'mongodb://DaveBuddy:k3yb0@rd@ds163738.mlab.com:63738/sportsregistration'
 };
 
 exports.secret = 'b7TY?>m6wl_i/<';
