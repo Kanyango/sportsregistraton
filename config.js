@@ -2,7 +2,7 @@
 //exports.port = process.env.PORT || 7000;
 exports.mongodb = {
 	//uri: 'mongodb://127.0.0.1:27017/wachezaji'
-	uri: 'mongodb://DaveBuddy:bmw760LI@ds163738.mlab.com:63738/sportsregistration'
+	uri: 'mongodb://kariuki:androidapps@ds163738.mlab.com:63738/sportsregistration'
 };
 
 exports.secret = 'b7TY?>m6wl_i/<';
