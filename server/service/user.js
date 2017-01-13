@@ -33,7 +33,7 @@ var user = {
 		user.staff_phone = req.body.sphone,
 		user.nationality = req.body.nation,
 		user.nat_id = req.body.natid,
-		user.email = req.body.username;
+		user.email = req.body.username,
 		user.phone = req.body.phone;
 		user.setPassword(req.body.password)
 
