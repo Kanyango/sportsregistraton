@@ -1,5 +1,5 @@
-exports.port = process.env.hostname || localhost;
-exports.port = process.env.PORT || 7000;
+//exports.port = process.env.hostname || localhost;
+//exports.port = process.env.PORT || 7000;
 exports.mongodb = {
 	//uri: 'mongodb://127.0.0.1:27017/wachezaji'
 	uri: 'mongodb://DaveBuddy:k3yb0@rd@ds163738.mlab.com:63738/sportsregistration'
