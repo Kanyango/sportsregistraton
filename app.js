@@ -14,7 +14,7 @@ var app = express();
 
 app.config = config;
 
-app.server = http.createServer(app);
+//app.server = http.createServer(app);
 
 app.db = mongoose.createConnection(config.mongodb.uri);
 app.db.once('open', function(){
@@ -51,7 +51,7 @@ require('./passport')(app , passport);
 require('./routes')(app , passport);
 
 
-app.server.listen(app.config.port , function(){
+//app.server.listen(app.config.port , function(){
 
 });
 console.log('Process ' + process.pid + ' is listening to all incoming requests');
