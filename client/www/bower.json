@@ -1,0 +1,25 @@
+{
+  "name": "wachezaji",
+  "description": "wachezaji",
+  "main": "app.js",
+  "keywords": [
+    "ams"
+  ],
+  "authors": [
+    "dave"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-tokenize": "^2.5.2",
+    "tokenize2": "*",
+    "angular-tags": "^0.2.10"
+  }
+}

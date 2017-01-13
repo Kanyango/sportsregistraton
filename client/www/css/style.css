@@ -1,0 +1,159 @@
+body
+{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+
+}
+p{
+	font-size: 17px;
+	word-spacing: 1px;
+	letter-spacing: 1px;
+}
+.navbar-default {
+
+	height: 80px;
+}
+.well{
+
+	background-color: #fff !important;
+}
+
+#dashHome
+{
+	background-color: #f0f0f0;
+}
+
+.price{
+
+	color:#D92121;
+}
+.navbar-nav {
+
+	padding-top: 10px;
+}
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active a
+ {
+ 	background-color: #D92121;
+ 	color: #fff;
+ }
+#buddyHeader
+{
+	letter-spacing: 6px;
+	color: #fff;
+	line-height: 1.2em;
+	margin-top: 60px;
+
+}
+
+#user {
+
+	padding: 20px;
+}
+.motto{
+
+	text-decoration: underline;
+	letter-spacing: 0.01em;
+}
+#jumbo {
+
+	background-image: url("/assets/bg.png");
+	background-position: center;
+	background-color: #f0f0f0;
+	background-attachment: fixed;
+	min-height: 600px;
+	margin-bottom: 0px;
+}
+.btn-start{
+
+	background-color: #D92121;
+	border-color: #D92121; 
+	color: #fff;
+}
+	
+.btn-start:hover , .btn-start:active , .btn-start:focus {
+
+	background-color: #E12C2C;
+	border-color: #E12C2C !important;
+	color: #fff;
+}
+
+#buddyStart {
+
+	width: 150px;
+}
+#start {
+
+	margin-top: 20px;
+}
+
+#pricing {
+	margin-top: 0px;
+	background-color: #33CC99;
+	color: #fff;
+}
+#priceHeder {
+
+	padding: 20px;
+}
+#end{
+
+	letter-spacing: 5px;
+	color: #248f6b;
+}
+#possy
+{
+	background-color: #F8F8F8;
+	color: #33CC99;
+	opacity: 0.8;
+	letter-spacing: 2px;
+}
+#possyHeads
+{
+	color: #33CC99;
+	margin-bottom: 50px;
+	word-spacing: 2px;
+	letter-spacing: 2px;
+}
+#more
+{
+	word-spacing: 2px;
+	letter-spacing: .5px;
+}
+#support
+{
+	background-color: #F8F8F8;
+
+}
+#supportServ
+{
+	color: #D92121;
+	word-spacing: 2px;
+	letter-spacing: 1px;
+}
+#about
+{
+ margin-bottom: 30px;
+ margin-top: 30px;
+}
+#contactForm
+{
+	background-color: #71dab7;
+	color: #fff;
+	font-size: 16px;
+}
+#footer
+{
+	background-color:  #F8F8F8;
+}
+#wait{
+
+	background-color: #F8F8F8;
+	margin-bottom: 50px;
+	padding-top: 30px;
+
+}
+#formy
+{
+	padding-bottom: 20px;
+}

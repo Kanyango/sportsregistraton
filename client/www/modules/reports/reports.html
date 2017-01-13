@@ -1,0 +1,62 @@
+<div class="container">
+<a ui-sref="wachezaji" class="btn btn-md btn-primary">back</a>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<h2 class="text-left">Reports</h2>
+		</div>
+	</div>
+	<hr>
+</div>
+
+<div class="container">
+	<div class="row">
+   <div class="col-md-6">
+             <h3>Sportmen/women per County</h3>
+          <canvas id="bar" class="chart chart-bar"
+			  chart-data="data" chart-labels="labels"> chart-series="series"
+			</canvas
+      </div> 
+		</div>
+  <div ng-controller="DiscGraphController">
+     <div class="row">
+       <div class="col-md-6">
+             <h3>Athletes By Discipline</h3>
+            <canvas id="bar" class="chart chart-bar"
+        chart-data="data" chart-labels="labels"> chart-series="series"
+      </canvas 
+    </div>
+ </div>
+</div>
+  <div class="container" ng-controller="SportGraphController">
+  <div class="row">
+  <div class="col-md-6">
+             <h3>Athletes By Sport</h3>
+            <canvas id="bar" class="chart chart-bar"
+        chart-data="data" chart-labels="labels"> chart-series="series"
+      </canvas
+          </div> 
+    </div>
+
+<div ng-controller="LevelGraphController">
+  <div class="row">
+  <div class="col-md-6">
+             <h3>Athletes By Level</h3>
+            <canvas id="bar" class="chart chart-bar"
+        chart-data="data" chart-labels="labels"> chart-series="series"
+      </canvas
+         </div> 
+    </div>
+</div>
+<div class="container" ng-controller="LevelGraphController">
+  <div class="row">
+  <div class="col-md-6">
+             <h3>Athletes By Status(Active/Inactive)</h3>
+            <canvas id="bar" class="chart chart-bar"
+        chart-data="data" chart-labels="labels"> chart-series="series"
+      </canvas
+         </div> 
+    </div>
+</div>
+

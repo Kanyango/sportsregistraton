@@ -1,0 +1,70 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Sports Manager & Recruitment</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li ng-hide="isLoggedIn()"><a ui-sref="signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li ng-hide="isLoggedIn()"><a ui-sref="signin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li ng-show="isLoggedIn()"><a ng-click="logOut()" ui-sref="signin"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+	<div class="row">
+		<h1>Admin Panel</h1>
+	</div>
+</div>
+<hr>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+		<div class="text-center">
+		<h3>Sportsmen Listing</h3>
+		<ul class="list-group" ng-repeat="mchezaji in wachezaji  | filter: paginate ">
+		 <li class="list-group-item">
+			<h4>{{mchezaji.name}}</h4>
+			<button type="button" class="btn btn-default" ng-click="isCollapsed = !isCollapsed">View More</button>
+			<button ng-hide="show == 'never'"class="btn btn-md btn-success" ng-click="edit(mchezaji)">edit 
+			</button>
+			<button  ng-hide="show == 'never'" class="btn btn-md btn-danger" ng-click="delete(mchezaji._id)">delete</button>
+			<div uib-collapse="isCollapsed">
+		<div class="text-left">
+			<h4>More {{mchezaji.dob | date:'fullDate'}}</h4>
+		</div>
+	</div>
+		</li>
+		</ul>
+		<ul uib-pagination total-items="totalItems" 
+       max-size="5" boundary-links="true" ng-model="currentPage"
+          items-per-page="numPerPage">
+        </ul>
+		</div>
+			
+		</div>
+		<div class="col-md-6" ng-controller="RecruitController">
+		 <div class="text-center">
+		 	<h3>Recruiters Listing</h3>
+		 </div>
+		 <ul class="list-group" ng-repeat="recruiter in recruiters  | filter: paginate ">
+		 <li class="list-group-item">
+			<h4>{{recruiter.orgname}} : {{recruiter.recruiter}}</h4>
+			<button type="button" class="btn btn-default" ng-click="isCollapsed = !isCollapsed">View More</button>
+			<button ng-hide="show == 'never'"class="btn btn-md btn-success" ng-click="edit(recruiter)">edit 
+			</button>
+			<button  ng-hide="show == 'never'" class="btn btn-md btn-danger" ng-click="delete(recruiter._id)">delete</button>
+			<div uib-collapse="isCollapsed">
+		<div class="text-left">
+			<h4>More {{recruiter.email}}</h4>
+		</div>
+	</div>
+		</li>
+		</ul>
+		<ul uib-pagination total-items="totalItems" 
+       max-size="5" boundary-links="true" ng-model="currentPage"
+          items-per-page="numPerPage">
+        </ul>
+			
+		</div>
+    </div>
+</div>

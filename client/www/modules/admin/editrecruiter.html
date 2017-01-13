@@ -1,0 +1,128 @@
+	<div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" ng-click="cancel()">&times;</button>
+        <h4 class="modal-title">Mchezaji Details</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+			    <div class="form-group">
+			    	<label class="control-label col-md-5">Are you an organisation/institution or Individual</label>
+			    	<div class="col-md-4">
+			    	<select class="form-control" ng-model="recruiter.recruiter" 
+			    	name="recruiter">
+			    	<option value="">Select</option>
+			    <option value="organisation">Organisation/Institution</option>
+			    	<option value="individual">Individual</option>
+			    	</select>
+			    	</div>
+			    </div>
+			    <div hidden>
+					<label class="control-label col-md-2">Role</label>
+					<div class="col-md-4">
+					<input type="email" class="form-control" ng-model="recruiter.role" name="role">
+				  </div>
+				  </div>
+				   <div hidden>
+					<label class="control-label col-md-2">Role</label>
+					<div class="col-md-4">
+					<input type="text" class="form-control" ng-model="recruiter._id" name="_id">
+				  </div>
+				 </div>
+			    <div ng-show="recruiter.recruiter == 'organisation'">
+			    <div class="form-group">
+					<label class="control-label col-md-2">Org Name</label>
+					<div class="col-md-4">
+					<input type="email" class="form-control" ng-model="recruiter.orgname" name="orgname">
+				  </div>
+				 </div>
+				 <div class="form-group">
+					<label class="control-label col-md-2">Org Industry</label>
+					<div class="col-md-4">
+					<select ng-options="item for item in industries" class="form-control" ng-model="recruiter.industry" name="industry"></select>
+				  </div>
+				 </div>
+				 <div class="form-group">
+					<label class="control-label col-md-2">Org Address</label>
+					<div class="col-md-4">
+					<input type="text" class="form-control" 
+					ng-model="recruiter.address" name="address">
+				  </div>
+				 </div>
+				 <div class="form-group">
+					<label class="control-label col-md-2">Position in Org</label>
+					<div class="col-md-4">
+					<select class="form-control" ng-model="recruiter.position" name="pos">
+						<option value="">Select</option>
+						<option value="Director">Director</option>
+						<option value="manager">Manager</option>
+						<option value="jmanager">Junior Manager</option>
+						<option value="general staff">General Staff</option>
+					</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-md-2">Your Name</label>
+					<div class="col-md-4">
+					<input type="text" class="form-control" ng-model="recruiter.staff_name" name="staff_name">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-md-2">Your Phone</label>
+					<div class="col-md-4">
+					<input type="text" class="form-control" ng-model="recruiter.staff_phone" name="staff_phone">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-md-2">Org email</label>
+					<div class="col-md-4">
+					<input type="text" class="form-control"
+					 ng-model="recruiter.email" name="email" readonly>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-md-2">Org Tel</label>
+					<div class="col-md-4">
+					<input type="tel" class="form-control" ng-model="recruiter.phone" name="phone">
+					</div>
+				</div>
+				</div>
+				<div ng-show="recruiter.recruiter == 'individual'">
+					<div class="form-group">
+					<label class="control-label col-md-2">Nationality</label>
+					<div class="col-md-4">
+					<input type="text" class="form-control" ng-model="recruiter.nation" name="nation">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-md-2">I.D/Passport No</label>
+					<div class="col-md-4">
+					<input type="text" class="form-control" ng-model="recruiter.natid" name="natid">
+					</div>
+				</div>
+					<div class="form-group">
+					<label class="control-label col-md-2">email</label>
+					<div class="col-md-4">
+					<input type="email" class="form-control" ng-model="recruiter.recruiter.email" name="recruiter.email">
+					</div>
+				</div>
+			 <div class="form-group">
+					<label class="control-label col-md-2">phone</label>
+					<div class="col-md-4">
+					<input type="tel" class="form-control" ng-model="recruiter.phone" name="phone">
+					</div>
+				</div>
+				</div>
+				<div class="form-group">
+				 <div class="col-md-2 col-md-offset-2">
+					<button class="btn btn-md btn-primary" ng-click="update(); ok()">Signup</button>
+				 </div>
+				</div>
+
+			</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" ng-click="cancel()">Close</button>
+ </div>
+ </div>
+
+	

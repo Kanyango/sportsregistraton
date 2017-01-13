@@ -1,0 +1,54 @@
+{
+  "name": "smsapp",
+  "description": "your texting buddy",
+  "version": "0.1.10",
+  "main": "app.js",
+  "keywords": [
+    "smsapp",
+    "sms buddy"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Kanyango Kariuki",
+    "email": "kariukikanyango@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kanyango/sportsregistraton.git"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "4.1.1",
+    "npm": "3.8.8"
+  },
+  "dependencies": {
+    "angular-file-upload": "^2.3.4",
+    "async": "^1.x.x",
+    "bcrypt": "^0.8.x",
+    "body-parser": "^1.15.2",
+    "connect-mongo": "^1.2.1",
+    "cookie-parser": "^1.x.x",
+    "csurf": "^1.x.x",
+    "emailjs": "^0.3.x",
+    "express": "^4.14.0",
+    "express-jwt": "^3.4.0",
+    "express-session": "^1.14.0",
+    "express-unless": "^0.3.0",
+    "jsonwebtoken": "^7.1.6",
+    "lodash.set": "^4.0.0",
+    "mongo-xlsx": "^1.0.12",
+    "mongodb": "^2.1.21",
+    "mongodb-core": "^1.3.21",
+    "mongoose": "^4.5.5",
+    "multer": "^1.2.0",
+    "ng-file-upload": "^12.2.12",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.4",
+    "request": "^2.75.0",
+    "throng": "^4.0.0"
+  }
+}

@@ -1,0 +1,189 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Sports Manager & Recruitment</a>
+    </div>
+  </div>
+</nav>
+<div class="container">
+	<a ui-sref="wachezaji" class="btn btn-md btn-primary">back</a>
+</div>
+<div class="container">
+	<div class="row">
+		<h2 class="text-left">New Player</h2>
+	</div>
+</div>
+<hr>
+	<div class="container">
+      <div class="row">
+        <form class="form-inline" role="form">
+        	<!--<div class="form-group">
+					<label class="control-label">Photo</label>
+					<input class="file form-control" type="file" file-model ="myFile"/>
+			         <button ng-click = "uploadFile()">upload me</button>
+				</div> -->
+				<div class="form-group">
+					<label class="control-label">Name</label>
+					<input type="text" class="form-control" name="name"
+					ng-model="mchezaji.name">
+				</div>
+        		<div class="form-group">
+					<label class="control-label">D.O.B</label>
+					<input type="date" class="form-control" name="owner"
+					ng-model="mchezaji.dob">
+				</div>
+				<div class="form-group">
+					<label class="control-label">Gender</label>
+					<select type="text" class="form-control" name="gender" 
+					 ng-model="mchezaji.gender">
+					 <option value="">Select</option>
+					 <option value="male">Male</option>
+					 <option value="female">Female</option>
+					 </select>
+				</div>
+				<div class="form-group">
+					<label class="control-label">Phone</label>
+					<input type="tel" class="form-control" name="phone"
+					ng-model="mchezaji.phone">
+				</div>
+				<div class="form-group">
+					<label class="control-label">Email</label>
+					<input type="email" class="form-control" name="email"
+					ng-model="mchezaji.email">
+				</div>
+				<hr>
+				<div class="form-group">
+					<label class="control-label">Nationality</label>
+					<input type="text" class="form-control" name="nation"
+					ng-model="mchezaji.nation">
+				</div>
+					<div class="form-group">
+					<label class="control-label">Passport/National Id</label>
+					<input type="tel" class="form-control" name="natid"
+					ng-model="mchezaji.natid">
+				</div>
+					<div class="form-group">
+					<label class="control-label">K.R.A PIN</label>
+					<input type="text" class="form-control" name="krapin"
+					ng-model="mchezaji.krapin">
+				</div>
+				<hr>
+			    <div class="form-group">
+					<div class="form-group">
+					<label class="control-label">Guardian Name</label>
+					<input type="text" class="form-control" name="gname"
+					ng-model="mchezaji.gname">
+				</div>
+			    </div>
+			    <div class="form-group">
+					<label class="control-label">phone</label>
+					<input type="text"  class="form-control" name="gphone"
+					ng-model="mchezaji.gphone">
+			    </div>
+			    <hr>
+				<div class="form-group">
+					<label class="control-label">Sport</label>
+					<select class="form-control"  name="sport"
+					ng-model="mchezaji.sport">
+					<option value="">Select</option>
+					<option value="football">Football</option>
+					<option value="rugby">Rugby</option>
+					<option value="tennis">Tennis</option>
+					<option value="athletics">Athletics</option>
+					<option value="cricket">Cricket</option>
+					<option value="volleyball">Volleyball</option>
+					<option value="Boxing">Boxing</option>
+					<option value="handball">Handball</option>
+					<option value="Golf">Golf</option>
+					<option value="Motorsport">Motorsport</option>
+					</select>
+				</div>
+				<div class="form-group" ng-show="mchezaji.sport == 'athletics'">
+					<label class="control-label">Athletics Disciplines</label>
+					<select class="form-control"  name="ath"
+					ng-model="mchezaji.ath">
+					<option value="">Select</option>
+					<option value="100m">100m</option>
+					<option value="200m">200m</option>
+					<option value="400m">400m</option>
+					<option value="800m">800m</option>
+					<option value="1500m">1500m</option>
+					<option value="3000m">3000m</option>
+					<option value="5000m">5000m</option>
+					<option value="10,000m">10,000m</option>
+					<option value="Marathon">Marathon</option>
+					<option value="Hurdles">Hurdles</option>
+					<option value="Steepleschase">Steeplechase</option>
+					<option value="Hurdles">Hurdles</option>
+					<option value="Archery">Archery</option>
+					<option value="Swimming">Swimming</option>
+					<option value="Javelin">Javelin</option>
+					<option value="Shotput">Shotput</option>
+					<option value="Hammer Throw">Hammer Throw</option>
+					<option value="Pole Vault">Pole Vault</option>
+					<option value="Long Jump">Long Jump</option>
+					<option value="High Jump">High Jump</option>
+					<option value="Heptathlon">Heptathlon</option>
+					<option value="Decathlon">Decathlon</option>
+					<option value="Race">Race</option>
+					<option value="Relay">Relay</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label class="control-label">Level</label>
+					<select type="text"  class="form-control" name="level"
+					ng-model="mchezaji.level">
+					<option value="">Select</option>
+					<option value="senior">Senior</option>
+					<option value="junior">Junior</option>
+					</select>
+			    </div>
+			    <div class="form-group">
+					<label class="control-label">Player Status</label>
+					<select type="text" class="form-control" name="status"
+					ng-model="mchezaji.status">
+					<option value="">Select</option>
+					<option value="Active">Active</option>
+					<option value="inactive">In Active</option>
+					</select>
+				</div>
+				<hr>
+				<div class="form-group">
+					<label class="control-label">County</label>
+					<select ng-options="item for item in counties" 
+					class="form-control" ng-model="mchezaji.county" 
+					></select>
+				</div>
+				<div class="form-group">
+					<label class="control-label">Level Of Education</label>
+					<select type="date"  class="form-control" name="levelOfEducation"
+					ng-model="mchezaji.levelOfEducation">
+					<option value="">Select</option>
+					<option value="primary">Primary School</option>
+					<option value="secondary">Secondary School</option>
+					<option value="univeristy">University Level</option>
+					</select>
+			    </div>
+			    <div class="form-group">
+					<div class="form-group">
+					<label class="control-label">Institution/Org</label>
+					<input type="text" class="form-control" name="institution"
+					ng-model="mchezaji.institution">
+				</div>
+			    </div>
+			    <div class="form-group">
+					<label class="control-label">Coach</label>
+					<input type="text"  class="form-control" name="coach"
+					ng-model="mchezaji.coach">
+			    </div>
+			<br>
+			<br>
+				<div class="form-group">
+					<button class="btn btn-lg btn-info" type="button" 
+			  	ng-click="save()">Save</button>
+				</div>
+			</form>
+      </div>
+ </div>
+
+	
