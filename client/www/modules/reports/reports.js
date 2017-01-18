@@ -1,6 +1,12 @@
 angular.module('wachezaji.reports', ['chart.js'])
 
 .controller('ReportsController', function($scope, $http){
+	
+	$http.get('/wachezaji')
+	.then(function(resp){
+		$scope.athletes = resp.data;
+		console.log('Hi ' + $scope.athletes);
+	});
 
 	$scope.data = []
 	$scope.labels = []
