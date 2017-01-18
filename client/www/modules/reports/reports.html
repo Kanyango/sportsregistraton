@@ -59,9 +59,8 @@
          </div> 
     </div>
 </div>
-
-	  <div class="container">
-  <h2 class="text-left">Tabular Reports</h2>
+<div class="container">
+  <h2 class="text-center">Tabular Reports</h2>
   <div class="row">
     <div class="col-md-6">
      <h3 class="text-center">Athletes By Gender</h3>
@@ -69,7 +68,7 @@
         <thead>
           <tr>
             <td>Name</td>
-            <td>Male</td>
+            <td>Gender</td>
           </tr>
         </thead>
         <tbody>
@@ -79,7 +78,97 @@
           </tr>
         </tbody>
       </table>
+	    <div class="col-md-6">
+     <h3 class="text-center">Athletes By Level</h3>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Gender</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="athlete in athletes">
+            <td>{{athlete.name}}</td>
+            <td>{{athlete.level}}</td>
+          </tr>
+        </tbody>
+      </table
     </div>
   </div>
 </div>
-
+<div class="container">
+  <h2 class="text-center">Tabular Reports</h2>
+  <div class="row">
+    <div class="col-md-6">
+     <h3 class="text-center">Athletes By County</h3>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>County</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="athlete in athletes">
+            <td>{{athlete.name}}</td>
+            <td>{{athlete.county}}</td>
+          </tr>
+        </tbody>
+      </table>
+	    <div class="col-md-6">
+     <h3 class="text-center">Athletes By Status</h3>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Status</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="athlete in athletes">
+            <td>{{athlete.name}}</td>
+            <td>{{athlete.status}}</td>
+          </tr>
+        </tbody>
+      </table
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+     <h3 class="text-center">Athletes By Sport</h3>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Sport</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="athlete in athletes">
+            <td>{{athlete.name}}</td>
+            <td>{{athlete.sport}}</td>
+          </tr>
+        </tbody>
+      </table>
+	    <div class="col-md-6">
+     <h3 class="text-center">Athletes By Discipline</h3>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Discipline</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="athlete in athletes">
+            <td>{{athlete.name}}</td>
+            <td>{{athlete.disciplines}}</td>
+          </tr>
+        </tbody>
+      </table
+    </div>
+  </div>
+</div>
